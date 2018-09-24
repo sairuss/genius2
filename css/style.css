@@ -1,0 +1,203 @@
+*{
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	/*overflow: hidden;*/
+}
+body{
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+body.main{
+	background-image: url(../images/bg-homepage.jpg);
+}
+body.last{
+	background-image: url(../images/bg-contact.jpg);
+}
+body.food{
+	background-image: url(../images/bg-gallery.jpg) ;
+}
+body.home{
+	background-image: url(../images/bg-about.jpg);
+}
+.wrap{
+	background-color: rgba(0,0,0,0.5);
+}
+.good{
+	display: grid;
+	grid-template-columns: 1fr 9fr;
+	grid-column-gap: 5vw;
+	width: 90vw;
+	min-width: 320px;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+h1{
+	text-align: center;
+}
+
+header div  ul{
+	padding:0;
+	margin: 0;
+    position: fixed;
+	list-style-type: none;	
+}
+header div ul li{
+    width: 80px;
+	height:80px;
+	background-color: rgba(42,42,42,01);
+	margin: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+	position: relative;
+}
+header div ul li:first-child{
+	margin-top: 0;
+}
+header div li p.hide{
+	visibility: hidden;
+}
+header div li p.show{
+	visibility: visible;
+	background-color: rgba(42,42,42,01);
+	position:absolute;
+	left:100%;
+	top: 2%;
+	width: 100%;
+	padding: 5px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+header div ul li a{
+	display: block;
+	border-radius: 50%;
+	border:1px solid #eee;
+    padding: 5px;
+	width: 60px;
+	height:60px;
+	text-align: center;
+	color:#eee;
+	line-height: 50px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+main{
+	background-color: rgba(0,0,0,0.9);
+	color: white;
+}
+body.main main{
+	background-color: transparent;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-row-gap: 20px;
+	grid-column-gap: 10%;
+	position: relative;
+}
+body.main main img{
+	width: 100%;
+}
+h2,h3,h4{
+text-transform: uppercase;
+}
+h2{
+	width: 100%;
+	border-bottom: 1px solid red;
+	margin-top: 0;
+	padding: 2%;
+	padding-left: 5%;
+}
+main section.twocol{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 5%;
+	padding: 2% 5%;
+}
+#slills div{
+background-color: #fff;
+}
+#slills div p{
+	background-color:  rgba(200,40,40,1);
+	text-align: center;
+}
+main>h3{
+	padding-left: 5%;
+}
+main section.col3{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 5%;
+	padding: 2% 5%;
+}
+main section.col3 figure{
+	margin: 0;
+	background-color: white;
+	color: #555;
+	text-align: center;
+	margin: 10px 0;
+}
+main section.col3 img{
+	width: 100%;
+}
+.after{
+	color: white;
+	padding-top: 10px;
+}
+.after i{
+	float: right;
+margin: 0px 10px;
+border-radius: 50%;
+border:2px solid #fff;
+padding: 1% ;
+width: 35px;
+height: 35px;
+text-align: center;
+}
+.end li{
+	list-style-type: none;
+}
+#play{
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	grid-gap: 2%;
+}
+iframe {
+	width: 100%;
+}
+.weapon{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.weapon label, .weapon input {
+	display: block;
+}
+.weapon input {
+	width: 90%;
+}
+.send label, .send textarea, .send input {
+	display: block;
+}
+.send textarea{
+	width: 97%;
+}
+.send input {
+	margin-top: 5%;
+	margin-bottom: 3%;
+	background-color: red;
+	border:none;
+}
+#play section:first-child{
+	padding-left: 3%;
+}
+#play section:last-child{
+	padding-right: 5%;
+}
+main i{
+ float: left;
+ background-color: #a61d27;
+ padding: 10px;
+}
